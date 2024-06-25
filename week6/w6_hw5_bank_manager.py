@@ -10,12 +10,12 @@ class BankManager:
         while running:
             self.__print_menu()
             choice = input('Enter your choice: ')
-            if choice == 1:     self._add_account()
-            elif choice == 2:   self._remove_account()
-            elif choice == 3:   self._withdraw()
-            elif choice == 4:   self._deposit()
-            elif choice == 5:   self._show()
-            elif choice == 6:   self._show_all()
+            if choice == 1:     self.__add_account()
+            elif choice == 2:   self.__remove_account()
+            elif choice == 3:   self.__withdraw()
+            elif choice == 4:   self.__deposit()
+            elif choice == 5:   self.__show()
+            elif choice == 6:   self.__show_all()
             elif choice == 0:   running = False
             else:               print('Invalid choice')
     
@@ -28,7 +28,7 @@ class BankManager:
         print('6. Show all')
         print('0. Quit')
 
-    def _add_account(self):
+    def __add_account(self):
         try:
             name = input('Enter account name: ')
             balance = float(input('Enter account balance: '))
@@ -37,3 +37,44 @@ class BankManager:
             print('Account added')
         except ValueError as e:
             print('Error:', e)
+
+    def __remove_account(self):
+        try:
+            id = int(input('Enter account ID: '))
+            self.__bank.remove(id)
+            print('Account removed')
+        except ValueError as e:
+            print('Error:', e)
+    
+    def __withdraw(self):
+        try:
+            id = int(input('Enter account ID: '))
+            amount = float(input('Enter amount to withdraw: '))
+            self.__bank.withdraw(id, amount)
+            print('Withdrawal successful')
+        except ValueError as e:
+            print('Error:', e)
+
+    def __deposit(self):
+        try:
+            id = int(input('Enter account ID: '))
+            amount = float(input('Enter amount to deposit: '))
+            self.__bank.deposit(id, amount)
+            print('Deposit successful')
+        except ValueError as e:
+            print('Error:', e)
+    
+    def __show(self):
+        try:
+            id = int(input('Enter account ID: '))
+            self.__bank.show(id)
+        except ValueError as e:
+            print('Error:', e)
+
+    def __show_all(self):
+        self.__bank.show_all()
+
+if __name__ == '__main__':
+    name = input('Enter bank name: ')
+    manager = BankManager(name)
+    manager.run()
