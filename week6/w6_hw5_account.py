@@ -21,6 +21,9 @@ class Account:
     def balance(self):
         return self.__balance
     
+    def _set_balance(self, balance):
+        self.__balance = balance
+    
     @name.setter
     def name(self, name):
         if name == '':

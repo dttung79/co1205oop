@@ -1,4 +1,5 @@
 from w6_hw5_account import Account
+from w6_debit_account import DebitAccount
 from w6_hw5_bank import Bank
 
 class BankManager:
@@ -9,7 +10,7 @@ class BankManager:
         running = True
         while running:
             self.__print_menu()
-            choice = input('Enter your choice: ')
+            choice = int(input('Enter your choice: '))
             if choice == 1:     self.__add_account()
             elif choice == 2:   self.__remove_account()
             elif choice == 3:   self.__withdraw()
@@ -32,7 +33,16 @@ class BankManager:
         try:
             name = input('Enter account name: ')
             balance = float(input('Enter account balance: '))
-            acc = Account(name, balance)
+            
+            acc_type = int(input('Choose account type: 1. Normal 2. Debit: '))
+            if acc_type not in [1, 2]:
+                raise ValueError('Invalid account type')
+            elif acc_type == 1:
+                acc = Account(name, balance)
+            else:
+                limit = float(input('Enter debit limit: '))
+                acc = DebitAccount(name, balance, limit)
+
             self.__bank.add(acc)
             print('Account added')
         except ValueError as e:
