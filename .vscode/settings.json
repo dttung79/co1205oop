@@ -1,6 +1,6 @@
 {
     "python.testing.pytestArgs": [
-        "week9"
+        "week10"
     ],
     "python.testing.unittestEnabled": false,
     "python.testing.pytestEnabled": true

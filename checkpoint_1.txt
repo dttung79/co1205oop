@@ -1,0 +1,99 @@
+Dương Văn Minh
+- nhầm code lại từ đầu
+
+Tạ Đức Mạnh
+- Xong 3 stage, đang làm innovation
+
+Nguyễn Quốc Đạt
+- Làm lại, lần sau kt có hiểu code không
+
+Trần Ngọc Duyệt
+- Comment cả tiếng việt => xóa
+- Mới đang ở stage 2
+
+Nguyễn Duy Lợi
+- Gần xong stage 3
+
+Nguyễn Tương Đức
+- Làm design stage 2 nhưng chưa làm stage 1
+
+Nguyễn Hữu Đức
+- Cần comment chi tiết thêm
+- Gần xong stage 3
+
+Đồng Kỳ Nam
+- Đang làm nhưng hiểu nhầm đề => đã hướng dẫn cách làm
+
+Nguyễn Gia Hưng
+- Chưa làm
+
+Huỳnh Phương Linh
+- Đã comment, đang design
+
+Lê Đắc Quân
+- Comment rồi, đang design tab
+
+Nguyễn Vũ Thế Hưng
+- Giao diện dạng Tab, nhầm chức năng tạo list -> tạo video mới
+- Update ok
+
+Trương Đình Trung
+- Play count đang lỗi
+- Có 1 số innovation
+
+
+Lê Hồng Minh
+- Đang làm stage 3, chưa hiểu code lắm
+
+Khuất Nhật Minh
+- Đang làm stage 4
+
+Nguyễn Ngọc Hoàng Dương
+- Ok, có 1 số innovation
+- Tự code
+
+Nguyễn Duy Tân
+- Chưa làm
+
+Bùi Đức Việt Linh
+- Xong stage 3, cần check xem có hiểu code không
+
+Phạm Trí Kiên
+- Sửa lại tất cả thành OOP
+
+Lê Đức Anh
+- Play list chưa xong
+- Update thiếu rating
+- Comment nhầm file
+
+Lê Vĩnh Phúc
+- Đang làm stage 3: còn lỗi
+
+Nguyễn Mạnh Kiên:
+- Chưa làm
+
+Nguyễn Đức Hải
+- Không hiểu code của mình
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
